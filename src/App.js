@@ -1,9 +1,10 @@
 import './default.scss';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className='App'>
-      <p>hi</p>
+      <Footer />
     </div>
   );
 }
