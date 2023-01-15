@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss';
 
-export default function Footer() {
+export default function Footer({side = 'right'}) {
   return (
     <div className={styles.footer}>
       <div className={styles.footerButton}>
@@ -13,7 +13,7 @@ export default function Footer() {
           <p className={styles.footerButtonRightText}>Prévison</p>
         </div>
       </div>
-      <div className={styles.footerSlider}></div>
+      <div className={styles.footerSlider} style={side === 'left' ? { left: '65px' } : {right:'65px'}}></div>
     </div>
   );
 }
