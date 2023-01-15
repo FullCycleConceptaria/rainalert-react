@@ -1,0 +1,64 @@
+@import '../../variables';
+
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 12%;
+  background: $white;
+  &Button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    &Left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      opacity: .5;
+      & i {
+        margin-top: 10px;
+        color: $darkBlue;
+      }
+      &Text {
+        margin-top: 20px;
+        color: $darkBlue;
+        font-family: $Roboto;
+      }
+    }
+    &Right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      & i {
+        margin-top: 10px;
+        color: $darkBlue;
+      }
+      &Text {
+        margin-top: 20px;
+        color: $darkBlue;
+        font-family: $Roboto;
+      }
+    }
+  }
+  &Slider{
+    position: absolute;
+    height: 10px;
+    width: 90px;
+    background: $darkBlue;
+    border-radius: 6px 6px 0 0 ;
+    bottom: 0;
+    right: 68px;
+    //left: 65px;
+    transition: all .5s;
+  }
+}
