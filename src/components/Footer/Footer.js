@@ -10,7 +10,7 @@ export default function Footer({side = 'right'}) {
         </div>
         <div className={styles.footerButtonRight}>
           <i className='fa-solid fa-cloud fa-2xl'></i>
-          <p className={styles.footerButtonRightText}>Prévison</p>
+          <p className={styles.footerButtonRightText}>Prévision</p>
         </div>
       </div>
       <div className={styles.footerSlider} style={side === 'left' ? { left: '65px' } : {right:'65px'}}></div>
