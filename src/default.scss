@@ -23,8 +23,9 @@ body {
 }
 
 .App {
+  background: $linearBlue;
   display: flex;
   height: 100%;
   width: 450px;
-  border: 2px solid white;
+  // border: 2px solid white;
 }
