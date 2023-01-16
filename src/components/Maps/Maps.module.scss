@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.maps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  & iframe{
+    display: flex;
+    width: 85%;
+    height: 95%;
+    border-radius: 20px;
+    border: 0;
+  } 
+  &Hour{
+    position: absolute;
+    display: flex;
+    background-color: $white;
+    border-radius: 100px;
+    padding: 7px 12px 7px 12px;
+    color: $blue;
+    font-family: $Roboto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    top: 35px;
+    right: 12%;
+    // box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+}
