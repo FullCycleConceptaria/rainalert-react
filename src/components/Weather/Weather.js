@@ -5,7 +5,7 @@ export default function Weather() {
     <div className={styles.weather}>
       <div className={styles.weatherBox}>
         <div className={styles.weatherBoxLogo}>
-          <i class='fa-solid fa-cloud fa-4x'></i>
+          <i className='fa-solid fa-cloud fa-4x'></i>
         </div>
         <div className={styles.weatherBoxTemperature}>15°C</div>
       </div>
