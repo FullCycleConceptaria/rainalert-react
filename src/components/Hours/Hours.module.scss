@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.hours {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 90%;
+  background: $darkBlue;
+  border-radius: 35px;
+  &Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $Roboto;
+    cursor: pointer;
+  }
+}

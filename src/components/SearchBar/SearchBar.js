@@ -31,7 +31,7 @@ export default function SearchBar() {
       </div>
       <div
         className={styles.searchBarResults}
-        style={style === true ? { opacity: '1', height: '695px' } : { opacity:'0', height: '0' }}
+        style={style === true ? { opacity: '1', height: '550px' } : { opacity:'0', height: '0' }}
       >
         <div className={styles.searchBarResultsName}></div>
         <div className={styles.searchBarResultsButton}>

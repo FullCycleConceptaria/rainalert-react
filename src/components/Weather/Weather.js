@@ -10,7 +10,7 @@ export default function Weather() {
         <div className={styles.weatherBoxTemperature}>15°C</div>
       </div>
       <div className={styles.weatherMillimeters}>
-        <div className={styles.weatherMillimetersTxt}>
+        <div className={styles.weatherMillimetersText}>
           La pluie se termine dans 1h45
         </div>
       </div>
