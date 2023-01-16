@@ -14,34 +14,16 @@
     justify-content: center;
     width: 100%;
     height: 90%;
-    &Left {
+    &Side {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 50%;
       height: 100%;
-      opacity: .5;
+      text-decoration: none;
       & i {
         margin-top: 20px;
-        color: $darkBlue;
-      }
-      &Text {
-        margin-top: 20px;
-        color: $darkBlue;
-        font-family: $Roboto;
-        font-weight: 800;
-      }
-    }
-    &Right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      height: 100%;
-      & i {
-        margin-top: 10px;
         color: $darkBlue;
       }
       &Text {
