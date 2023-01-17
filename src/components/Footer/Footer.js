@@ -6,7 +6,7 @@ export default function Footer({ side = 'right' }) {
     <div className={styles.footer}>
       <div className={styles.footerButton}>
         <Link
-          to='../../pages/map'
+          to='/pages/map'
           className={styles.footerButtonSide}
           style={side === 'right' ? { opacity: '.7' } : { opacity: '1' }}
         >

@@ -3,9 +3,11 @@ import Button from '../Button/Button';
 import { useHandleClickInput } from '../../hooks/useHandleClickInput';
 
 export default function SearchBar() {
-  const [HandleClickInput, style] = useHandleClickInput()
+  const [HandleClickInput, style] = useHandleClickInput();
   return (
-    <div className={styles.searchBar}>
+    <div
+      className={styles.searchBar}
+    >
       <div
         className={styles.searchBarContainer}
         style={
@@ -18,20 +20,22 @@ export default function SearchBar() {
           type='text'
           className={styles.searchBarContainerInput}
           placeholder='Rechercher'
-          onClick={() => { HandleClickInput('open') }}
+          onClick={() => {
+            HandleClickInput('open');
+          }}
         />
         <i
           className='fa-solid fa-magnifying-glass fa-2x'
-          style={
-            style === true
-              ? { color: '#262626'}
-              : { color: '#fff' }
-          }
+          style={style === true ? { color: '#262626' } : { color: '#fff' }}
         ></i>
       </div>
       <div
         className={styles.searchBarResults}
-        style={style === true ? { opacity: '1', height: '550px' } : { opacity:'0', height: '0' }}
+        style={
+          style === true
+            ? { opacity: '1', height: '550px' }
+            : { opacity: '0', height: '0' }
+        }
       >
         <div className={styles.searchBarResultsName}></div>
         <div className={styles.searchBarResultsButton}>
