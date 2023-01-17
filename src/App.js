@@ -11,7 +11,6 @@ import Loading from './components/Loading/Loading'
 function App() {
   return (
     <div className='App'>
-      <Loading />
       <Header />
       <div className='main'>
         <SearchBar />

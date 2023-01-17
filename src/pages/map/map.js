@@ -6,7 +6,6 @@ import Loading from '../../components/Loading/Loading'
 export default function Map() {
   return (
     <div className='App'>
-      <Loading />
       <Header />
       <div className='main'>
         <Maps />
