@@ -6,10 +6,12 @@ import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 import Hours from './components/Hours/Hours';
 import Chart from './components/Chart/Chart';
+import Loading from './components/Loading/Loading'
 
 function App() {
   return (
     <div className='App'>
+      <Loading />
       <Header />
       <div className='main'>
         <SearchBar />
