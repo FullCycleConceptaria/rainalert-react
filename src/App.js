@@ -5,6 +5,7 @@ import Weather from './components/Weather/Weather';
 import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 import Hours from './components/Hours/Hours';
+import Chart from './components/Chart/Chart';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className='main'>
         <SearchBar />
         <Weather />
+        <Chart />
         <Hours />
       </div>
       <Footer />
