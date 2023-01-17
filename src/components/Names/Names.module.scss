@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.text {
+  font-family: $Roboto;
+  color: $black;
+  font-size: 1rem;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: $black;
+}
