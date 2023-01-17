@@ -14,7 +14,7 @@ export default function Hours() {
             ? {
                 background: '#fff',
                 color: '#2F4C77',
-                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)',
                 cursor: 'context-menu',
               }
             : { background: 'none', color: '#fff' }
