@@ -8,6 +8,7 @@ export default function Loading(){
           <div className={styles.loadingScreenContentBoxLogo}></div>
           <div className={styles.loadingScreenContentBoxText}>RainAlert</div>
         </div>
+        <i className="fa-solid fa-spinner fa-spin fa-2xl"></i>
       </div>
     </div>
   )

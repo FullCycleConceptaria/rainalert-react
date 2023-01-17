@@ -10,6 +10,7 @@
   background: $linearBlue;
   &Content{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -33,6 +34,10 @@
         font-weight: 500;
         margin-left: 5px;
       }
+    }
+    & i{
+      color: $white;
+      margin-top: 20px;
     }
   }
 }
