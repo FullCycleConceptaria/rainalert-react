@@ -1,24 +1,30 @@
 import './default.scss';
 
 import Footer from './components/Footer/Footer';
-import Weather from './components/Weather/Weather';
 import Header from './components/Header/Header';
-import SearchBar from './components/SearchBar/SearchBar';
-import Hours from './components/Hours/Hours';
-import Chart from './components/Chart/Chart';
-import Loading from './components/Loading/Loading'
+import Loading from './components/Loading/Loading';
+import { Outlet } from 'react-router-dom';
+import Error from './components/Error/Error';
+import { useContext } from 'react';
+import { ContextData } from './context/ContextData';
 
 function App() {
+  const MyContext = ContextData();
+  const [nameList, loading, error] = useContext(MyContext);
   return (
     <div className='App'>
-      <Header />
-      <div className='main'>
-        <SearchBar />
-        <Weather />
-        <Chart />
-        <Hours />
-      </div>
-      <Footer />
+      {error && <Error />}
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Header />
+          <div className='main'>
+            <Outlet />
+          </div>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

@@ -51,11 +51,21 @@
       height: 82%;
       overflow-y: scroll;
       overflow-x: hidden;
-      //background: $black;
+      &Real {
+        width: 100%;
+        height: 40px;
+        font-family: $Roboto;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+        border-bottom: 2px solid $black;
+        cursor: pointer;
+      }
       &::-webkit-scrollbar {
         background: none;
         &-thumb {
-          background: $red;
+          background: $blue;
+          width: 15px;
+          border-radius: 30px;
         }
       }
     }

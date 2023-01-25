@@ -20,7 +20,7 @@ export default function Hours() {
             : { background: 'none', color: '#fff' }
         }
       >
-        12:00
+        00:00
       </div>
       <div
         className={styles.hoursButton}
@@ -37,7 +37,7 @@ export default function Hours() {
             : { background: 'none', color: '#fff' }
         }
       >
-        13:00
+        00:00
       </div>
       <div
         className={styles.hoursButton}
@@ -54,7 +54,7 @@ export default function Hours() {
             : { background: 'none', color: '#fff' }
         }
       >
-        14:00
+        00:00
       </div>
       <div
         className={styles.hoursButton}

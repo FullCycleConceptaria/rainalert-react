@@ -13,7 +13,6 @@ export default function useChart() {
       { hour: h4, pluie: t4 },
       { hour: h5, pluie: t5 },
     ];
-    // console.log(arrayHourly);
     if (build === false) {
       graph.destroy();
     }

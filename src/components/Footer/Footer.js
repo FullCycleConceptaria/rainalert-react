@@ -1,7 +1,9 @@
 import styles from './Footer.module.scss';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-export default function Footer({ side = 'right' }) {
+export default function Footer() {
+  const [side, setSide] = useState('right');
   return (
     <div className={styles.footer}>
       <div className={styles.footerButton}>
@@ -9,6 +11,7 @@ export default function Footer({ side = 'right' }) {
           to='/pages/map'
           className={styles.footerButtonSide}
           style={side === 'right' ? { opacity: '.7' } : { opacity: '1' }}
+          onClick={() => setSide('left')}
         >
           <i className='fa-solid fa-location-dot fa-2xl'></i>
           <p className={styles.footerButtonSideText}>Carte</p>
@@ -17,6 +20,7 @@ export default function Footer({ side = 'right' }) {
           to='/'
           className={styles.footerButtonSide}
           style={side === 'left' ? { opacity: '.7' } : { opacity: '1' }}
+          onClick={() => setSide('right')}
         >
           <i className='fa-solid fa-cloud fa-2xl'></i>
           <p className={styles.footerButtonSideText}>Prévision</p>
@@ -24,7 +28,7 @@ export default function Footer({ side = 'right' }) {
       </div>
       <div
         className={styles.footerSlider}
-        style={side === 'left' ? { left: '65px' } : { right: '65px' }}
+        style={side === 'left' ? { left: '70px' } : { left: '294px' }}
       ></div>
     </div>
   );
