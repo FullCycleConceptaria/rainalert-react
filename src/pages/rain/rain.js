@@ -7,10 +7,10 @@ import { ContextData } from '../../context/ContextData';
 
 export default function Rain() {
   const MyContext = ContextData();
-  const [nameList, loading, error] = useContext(MyContext);
+  const [nameList, loading, error, token] = useContext(MyContext);
   return (
     <>
-      <SearchBar nameList={nameList} />
+      <SearchBar nameList={nameList} token={token} />
       <Weather />
       <Chart />
       <Hours />

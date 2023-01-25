@@ -68,5 +68,5 @@ export default function useChart() {
     });
     build = false;
   }
-  return [arrayHourlyBuild, arrayHourly];
+  return [arrayHourlyBuild, arrayHourly, graph];
 }

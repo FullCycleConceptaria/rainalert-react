@@ -10,7 +10,7 @@ function ContextData() {
     `https://api.meteo-concept.com/api/location/cities?token=${token}&search=''`,
     'cities'
   );
-  const MyContext = createContext([userList, loading, error]);
+  const MyContext = createContext([userList, loading, error, token]);
   return MyContext;
 }
 export { ContextData };

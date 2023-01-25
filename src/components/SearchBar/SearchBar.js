@@ -2,8 +2,30 @@ import styles from './SearchBar.module.scss';
 import Button from '../Button/Button';
 import { useHandleClickInput } from '../../hooks/useHandleClickInput';
 import { useState } from 'react';
+import useChart from '../../hooks/useChart';
 
-export default function SearchBar({ nameList }) {
+export default function SearchBar({ nameList, token }) {
+  const [arrayHourlyBuild, arrayHourly] = useChart();
+
+  function HandleClickName(e, lat, long, insee) {
+    fetch(
+      `https://api.meteo-concept.com/api/forecast/nextHours?token=${token}&latlng=${lat}%2C${long}&insee=${insee}&hourly=true`
+    )
+      .then((res) => res.json())
+      .then((json) => arrayHourlyBuild(
+      json.forecast[0].datetime.slice(11, 16),
+      json.forecast[0].rr10,
+      json.forecast[1].datetime.slice(11, 16),
+      json.forecast[1].rr10,
+      json.forecast[2].datetime.slice(11, 16),
+      json.forecast[2].rr10,
+      json.forecast[3].datetime.slice(11, 16),
+      json.forecast[3].rr10,
+      json.forecast[4].datetime.slice(11, 16),
+      json.forecast[4].rr10
+    )); 
+  }
+
   const [HandleClickInput, style] = useHandleClickInput();
 
   const [filter, setFilter] = useState('');
@@ -59,7 +81,13 @@ export default function SearchBar({ nameList }) {
       >
         <div className={styles.searchBarResultsName}>
           {filteredNames.map((user) => (
-            <div key={user.insee} className={styles.searchBarResultsNameReal}>
+            <div
+              key={user.insee}
+              className={styles.searchBarResultsNameReal}
+              onClick={(e) => {
+                HandleClickName(e, user.latitude, user.longitude, user.insee);
+              }}
+            >
               {user.name}
             </div>
           ))}
