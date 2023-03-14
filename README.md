@@ -4,7 +4,7 @@ RainAlert is a website using an API showing real-time weather in France. This We
 
 The API we used for this WebApp : <a href="https://api.meteo-concept.com/">Meteo-concept</a>
 
-## How to run this WebApp
+## How to run this project
 
 In the project directory, you can run:
 
