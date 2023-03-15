@@ -1,8 +1,8 @@
 # RainAlert-React by <a href="https://github.com/NiteChill">NiteChill</a>, <a href="https://github.com/FullCycle">FullCycle</a> and <a href="https://github.com/Bluegnarl">Bluegnarl</a>
 
-RainAlert is a website using an API showing real-time weather in France. This WebApp was developed with ReactJS.
+RainAlert is a website using an API showing real-time weather in France. This web application was developed with ReactJS.
 
-The API we used for this WebApp : <a href="https://api.meteo-concept.com/">Meteo-concept</a>
+The API we used for this web application : <a href="https://api.meteo-concept.com/">Meteo-concept</a>
 
 ## How to run this project
 
